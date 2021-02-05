@@ -1,4 +1,4 @@
 ---
 collections:
-- name: https://github.com/ansible-collections/ibm.spectrum_virtualize
+- name: ibm.spectrum_virtualize
 - name: netapp.ontap
