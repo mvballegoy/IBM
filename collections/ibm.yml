@@ -7,7 +7,7 @@
   hosts: svc clusters
   vars:
     - user: username
-    - hostname: svc clusters
+    - hostname: 10.0.5.26
     - username: superuser
     - password: 90EDbed8
   tasks:
