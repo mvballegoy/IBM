@@ -1,0 +1,21 @@
+---
+- name: Using the IBM Spectrum Virtualize collection
+  collections:
+    - ibm.spectrum_virtualize
+  gather_facts: no
+  connection: local
+  hosts: localhost
+  vars:
+    - user: username
+    - clustername: 10.0.5.10
+    - username: superuser
+    - password: 90EDbed8
+  tasks:
+    - name: Run CLI commands
+      register: results
+      ibm_svcinfo_command:
+        command: "svcinfo lssystem"
+        clustername: "{{ clustername }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
+        log_path: /tmp/test.debug
