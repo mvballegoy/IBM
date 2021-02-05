@@ -4,7 +4,7 @@
     - ibm.spectrum_virtualize
   gather_facts: no
   connection: local
-  hosts: localhost
+  hosts: svc clusters
   vars:
     - user: username
     - clustername: 10.0.5.10
