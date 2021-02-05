@@ -7,7 +7,7 @@
   hosts: svc clusters
   vars:
     - user: username
-    - clustername: 10.0.5.10
+    - inventory hostname: svc clusters
     - username: superuser
     - password: 90EDbed8
   tasks:
