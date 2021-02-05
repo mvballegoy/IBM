@@ -7,7 +7,7 @@
   hosts: svc clusters
   vars:
     - user: username
-    - inventory hostname: svc clusters
+    - hostname: svc clusters
     - username: superuser
     - password: 90EDbed8
   tasks:
@@ -15,7 +15,7 @@
       register: results
       ibm_svcinfo_command:
         command: "svcinfo lssystem"
-        inventory hostname: "{{ inventory hostname }}"
+        hostname: "{{ hostname }}"
         username: "{{ username }}"
         password: "{{ password }}"
         log_path: /tmp/test.debug
